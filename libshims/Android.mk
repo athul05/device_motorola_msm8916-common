@@ -17,8 +17,8 @@ LOCAL_PATH := $(call my-dir)
 
 # Camera
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES := MediaCodec.cpp AudioSource.cpp MetaData.cpp
-LOCAL_SHARED_LIBRARIES := libstagefright libmedia
+LOCAL_SRC_FILES := MediaCodec.cpp AudioSource.cpp MetaData.cpp justshoot_shim.cpp
+LOCAL_SHARED_LIBRARIES := libstagefright libmedia libutils
 LOCAL_MODULE := libshims_camera
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
